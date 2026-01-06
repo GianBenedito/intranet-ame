@@ -1,0 +1,55 @@
+body {
+    background-color: #f5f6f8;
+}
+
+/* Cards */
+.card {
+    border-radius: 8px;
+}
+
+/* Sidebar */
+aside {
+    min-height: calc(100vh - 56px); /* altura da navbar */
+}
+
+/* Remove estilos do li */
+aside ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+aside ul li {
+    list-style: none;
+}
+
+/* Link do menu */
+aside a {
+    display: block;
+    color: #333;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Ícone */
+aside a i {
+    margin-right: 6px;
+}
+
+/* Hover */
+aside a:hover {
+    background-color: #e9ecef;
+    color: #0d6efd;
+}
+
+/* Item ativo (para usar depois) */
+aside a.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* Ícone ativo */
+aside a.active i {
+    color: #fff;
+}
