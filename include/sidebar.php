@@ -27,7 +27,7 @@
         </li>
 
         <li class="mb-2">
-            <a href="#" class="text-decoration-none d-block">
+            <a href="visao.php" class="text-decoration-none d-block">
                 <i class="bi-lightbulb me-2"></i> Missão, visão e valores
             </a>
         </li>

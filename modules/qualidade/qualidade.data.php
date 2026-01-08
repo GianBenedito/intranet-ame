@@ -9,7 +9,9 @@
  */
 
 // Caminho REAL no servidor onde estão os protocolos
-$baseDir = '/var/www/html/intranet-new/protocolos';
+
+//$baseDir = '/var/www/html/intranet-new/protocolos';
+$baseDir = 'C:\xampp\htdocs\intranet-new\protocolos';
 
 // Caminho usado no navegador (URL)
 $baseUrl = '/intranet-new/protocolos';

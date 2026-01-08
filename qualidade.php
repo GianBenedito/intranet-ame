@@ -1,8 +1,9 @@
 <?php
 $usuarioLogado = false;
 
-// CAMINHO REAL (funcionava)
-$baseDir = '/var/www/html/intranet-new/protocolos';
+// CAMINHO REAL
+//$baseDir = '/var/www/html/intranet-new/protocolos';
+$baseDir = 'C:\xampp\htdocs\intranet-new\protocolos';
 
 // URL de navegação
 $baseUrl = 'protocolos.php';
@@ -44,17 +45,24 @@ $pastas = array_values(array_filter(
 
         <main class="col-10">
 
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h4>
-                    <i class="bi bi-folder2-open"></i> Qualidade
-                </h4>
+            <div class="position-relative text-center mb-4">
 
-                <?php if ($usuarioLogado): ?>
-                    <button class="btn btn-primary">
-                        <i class="bi bi-upload"></i> Enviar documento
-                    </button>
-                <?php endif; ?>
-            </div>
+    <h4 class="fw-semibold">
+        <i class="bi bi-folder2-open me-2"></i>
+        Qualidade
+    </h4>
+
+    <a href="index.php" class="text-decoration-none d-block">
+        <i class="bi bi-arrow-left"></i> Voltar
+    </a>
+
+    <?php if ($usuarioLogado): ?>
+        <button class="btn btn-primary position-absolute end-0 top-50 translate-middle-y">
+            <i class="bi bi-upload"></i> Enviar documento
+        </button>
+    <?php endif; ?>
+
+</div>
 
             <div class="row g-3">
 
